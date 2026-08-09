@@ -1,19 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flunklug</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page">
-      <div class="content">
-        <span class="eyebrow">Flunklug VR</span>
-        <h1>Join the community</h1>
-        <p>Hear about updates early and stay connected as Flunklug grows.</p>
-        <a class="button" href="https://discord.gg/vJ4qatTG2x" target="_blank" rel="noopener noreferrer">Join Discord</a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flunklug - Multiplayer Co-op VR Horror Heist Game for Meta Quest</title>
+<meta name="description" content="Flunklug is a multiplayer co-op horror game about stealing what isn't yours. Break into facilities and caverns with up to 15 friends, grab everything you can carry, and get out before the things down there catch you. Coming August 2026 to Meta Quest.">
+<link rel="canonical" href="https://flunklug.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Flunklug">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://flunklug.com/">
+<meta property="og:title" content="Flunklug - Multiplayer Co-op VR Horror Heist Game">
+<meta property="og:description" content="Some scrap is worth the risk. Break in, grab everything of value you can carry, and get out before the things down there catch you first. Coming August 2026 to Meta Quest.">
+<meta property="og:image" content="https://flunklug.com/images/CoverArtWithLogo16by9.webp">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1440">
+<meta property="og:image:alt" content="Flunklug key art - a red-eyed monster lunging at players inside a concrete bunker.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Flunklug - Multiplayer Co-op VR Horror Heist Game">
+<meta name="twitter:description" content="Some scrap is worth the risk. Coming August 2026 to Meta Quest.">
+<meta name="twitter:image" content="https://flunklug.com/images/CoverArtWithLogo16by9.webp">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#14161a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700;800&display=swap">
+
+<link rel="preload" as="image" href="images/BannerWithCompanyLogo16by9.webp">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoGame",
+      "@id": "https://flunklug.com/#game",
+      "name": "Flunklug",
+      "url": "https://flunklug.com/",
+      "description": "Flunklug is a multiplayer co-op horror game about stealing what isn't yours. Break into facilities, caverns and worse with your friends, grab everything of value you can carry, and get out before the things down there catch you first.",
+      "image": "https://flunklug.com/images/CoverArtWithLogo16by9.webp",
+      "applicationCategory": "Game",
+      "genre": ["Action", "Adventure", "Horror", "Platformer"],
+      "gamePlatform": ["Meta Quest 2", "Meta Quest 3", "Meta Quest 3S", "Meta Quest Pro"],
+      "operatingSystem": "Meta Horizon OS",
+      "playMode": ["CoOp", "MultiPlayer"],
+      "numberOfPlayers": {
+        "@type": "QuantitativeValue",
+        "maxValue": 15
+      },
+      "contentRating": "PEGI 12",
+      "inLanguage": "en",
+      "author": { "@id": "https://screenvrstudios.com/#org" },
+      "publisher": { "@id": "https://screenvrstudios.com/#org" },
+      "sameAs": [
+        "https://www.meta.com/experiences/flunklug/996016406703860/",
+        "https://www.tiktok.com/@flunklug",
+        "https://discord.gg/vJ4qatTG2x"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://screenvrstudios.com/#org",
+      "name": "Screen VR Studios",
+      "url": "https://screenvrstudios.com/",
+      "email": "screenvrstudios@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://www.youtube.com/@ScreenVR",
+        "https://www.tiktok.com/@screenvrstudios"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flunklug.com/#website",
+      "url": "https://flunklug.com/",
+      "name": "Flunklug",
+      "publisher": { "@id": "https://screenvrstudios.com/#org" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Flunklug home">
+      <img src="images/FlunklugLogoShadow.webp" alt="Flunklug" width="2560" height="1080">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#game">The Game</a>
+      <a href="#loop">The Loop</a>
+      <a href="#monsters">Monsters</a>
+      <a href="media.html">Media</a>
+      <a href="about.html">About</a>
+      <a class="btn btn--primary btn--sm" href="https://www.meta.com/experiences/flunklug/996016406703860/" target="_blank" rel="noopener">Wishlist</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- Key art without the burned-in wordmark, so the logo below isn't doubled up. -->
+    <img class="hero__art" src="images/BannerWithCompanyLogo16by9.webp" alt="" width="1920" height="1080" fetchpriority="high">
+    <div class="hero__scrim"></div>
+
+    <div class="wrap">
+      <span class="eyebrow">Coming August 2026 · Meta Quest</span>
+      <h1>
+        <img class="hero__logo" src="images/FlunklugLogoShadow.webp" alt="Flunklug" width="2560" height="1080">
+      </h1>
+      <p class="hero__tagline">Some scrap is worth the risk. You'll find out which.</p>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://www.meta.com/experiences/flunklug/996016406703860/" target="_blank" rel="noopener">Wishlist on Meta Quest</a>
+        <a class="btn btn--ghost" href="https://discord.gg/vJ4qatTG2x" target="_blank" rel="noopener">Join the Discord</a>
+      </div>
+
+      <p class="hero__meta">Meta Quest 2 · 3 · 3S · Pro</p>
+    </div>
+  </section>
+
+  <!-- Spec strip -->
+  <div class="specs">
+    <div class="wrap">
+      <ul>
+        <li>Coming August 2026</li>
+        <li>Up to 15 players</li>
+        <li>Co-op horror</li>
+        <li>Physics-driven</li>
+        <li>PEGI 12</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- The job -->
+  <section class="section" id="game">
+    <div class="wrap split split--flip">
+      <div class="split__media">
+        <img src="images/Screenshot2.webp" alt="Two players in a concrete corridor - one holding a red crowbar, one lighting the way with a flashlight." width="2560" height="1440" loading="lazy" decoding="async">
+      </div>
+      <div class="split__body">
+        <span class="eyebrow">The Job</span>
+        <h2>Steal what isn't yours</h2>
+        <p>Flunklug is a multiplayer co-op horror game about stealing what isn't yours. Break into facilities, caverns and worse with your friends, grab everything of value you can carry, and get out before the things down there catch you first.</p>
+        <p>The whole world is physics-driven. Everything reacts, breaks and gets in the way.</p>
+        <p>Some gadgets exist purely to open up parts of the map you shouldn't be in. That's where the rarer, more valuable stuff is kept.</p>
+        <div class="btn-row">
+          <a class="btn btn--ghost" href="about.html">More about the game</a>
+        </div>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- The loop -->
+  <section class="section section--alt loop" id="loop">
+    <img class="loop__screw" src="images/ScrewTransparent.webp" alt="" width="1920" height="1920" loading="lazy" decoding="async" aria-hidden="true">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Loop</span>
+        <h2>Every escape pays for the next</h2>
+        <p>Get in, get loaded up, get out alive. Then spend the haul on whatever gets you deeper next time.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step__num">01</span>
+          <h3>Break in</h3>
+          <p>Facilities, caverns and worse. Getting through the front door is your problem to solve.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">02</span>
+          <h3>Grab everything</h3>
+          <p>If it has value and you can carry it, it's coming with you. Your hands and bag are the only inventory.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">03</span>
+          <h3>Get out</h3>
+          <p>The things down there don't wait for you to loot. Don't get caught.</p>
+        </div>
+        <div class="step">
+          <span class="step__num">04</span>
+          <h3>Sell &amp; gear up</h3>
+          <p>Cash in the scrap, unlock new gadgets and weapons, and push deeper than the run before.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monsters -->
+  <section class="section" id="monsters">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Down There</span>
+        <h2>You are not alone in the dark</h2>
+        <p>Something has been living in these places a lot longer than you've been robbing them.</p>
+      </div>
+
+      <div class="monsters">
+        <article class="monster">
+          <div class="monster__frame">
+            <img src="images/MonsterStalker.webp" alt="The Stalker - a pale, emaciated humanoid with hollow eye sockets and long clawed fingers." width="1920" height="1920" loading="lazy" decoding="async">
+          </div>
+          <h3>The Stalker</h3>
+          <p>Long arms, hollow eyes, stalking you through the caverns.</p>
+        </article>
+
+        <article class="monster">
+          <div class="monster__frame">
+            <img src="images/MonsterVigil.webp" alt="The Vigil - a hooded, skull-faced creature with one glowing orange eye, carrying a lit candle." width="1200" height="1600" loading="lazy" decoding="async">
+          </div>
+          <h3>The Vigil</h3>
+          <p>A statue so still. A flickering candle stares and you while you have to stay staring also.</p>
+        </article>
+
+        <article class="monster">
+          <div class="monster__frame">
+            <img src="images/MonsterWalker.webp" alt="The Walker - a decayed grey-brown creature with glowing red eyes, swinging a wooden plank." width="1080" height="1080" loading="lazy" decoding="async">
+          </div>
+          <h3>The Walker</h3>
+          <p>Something that used to be like you, dragging a hook it still knows how to use.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section section--alt" id="media">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Screenshots</span>
+        <h2>Straight from the game</h2>
+      </div>
+
+      <div class="shots">
+        <button class="shot shots__wide" type="button" data-full="images/Screenshot5.webp" data-caption="A player climbing a wooden support beam with a pickaxe in a lantern-lit mine tunnel.">
+          <img src="images/Screenshot5.webp" alt="A player climbing a wooden support beam with a pickaxe in a lantern-lit mine tunnel." width="2560" height="1440" loading="lazy" decoding="async">
+        </button>
+        <button class="shot" type="button" data-full="images/ScreeenShot6.webp" data-caption="A cave lined with pink crystal formations and an exposed gold ore vein.">
+          <img src="images/ScreeenShot6.webp" alt="A cave lined with pink crystal formations and an exposed gold ore vein." width="2560" height="1440" loading="lazy" decoding="async">
+        </button>
+        <button class="shot" type="button" data-full="images/Screenshot2.webp" data-caption="Two players moving through a concrete corridor with a crowbar and a flashlight.">
+          <img src="images/Screenshot2.webp" alt="Two players moving through a concrete corridor with a crowbar and a flashlight." width="2560" height="1440" loading="lazy" decoding="async">
+        </button>
+      </div>
+
+      <div class="btn-row" style="margin-top:2rem">
+        <a class="btn btn--ghost" href="media.html">See all media</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flunks -->
+  <section class="section" id="flunks">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Flunkers</span>
+        <h2>Look the part while you rob the place</h2>
+      </div>
+
+      <div class="flunks">
+        <figure class="flunk">
+          <img src="images/Flunk_Cone.webp" alt="A pink Flunker wearing a black-brimmed hat topped with an orange traffic cone." width="1188" height="1450" loading="lazy" decoding="async">
+          <figcaption>Cone</figcaption>
+        </figure>
+        <figure class="flunk">
+          <img src="images/Flunk_Crown.webp" alt="A brown Flunker wearing a gold crown set with red gems." width="1188" height="1450" loading="lazy" decoding="async">
+          <figcaption>Crown</figcaption>
+        </figure>
+        <figure class="flunk">
+          <img src="images/Flunk_Plunger.webp" alt="A brown Flunker with a red plunger stuck to its head." width="1188" height="1450" loading="lazy" decoding="async">
+          <figcaption>Plunger</figcaption>
+        </figure>
+        <figure class="flunk">
+          <img src="images/Flunk_StopSign.webp" alt="An orange-brown Flunker carrying a red warning sign strapped to its back." width="1188" height="1450" loading="lazy" decoding="async">
+          <figcaption>Stop Sign</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <img class="cta__art" src="images/Screenshot5.webp" alt="" width="2560" height="1440" loading="lazy" decoding="async">
+    <div class="wrap">
+      <span class="eyebrow">Coming August 2026</span>
+      <h2>Wishlist now. Panic later.</h2>
+      <p>Wishlisting on the Meta Quest store means you get told the moment Flunklug goes live. The Discord is where the builds, the clips and the arguments about who dropped the loot happen first.</p>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://www.meta.com/experiences/flunklug/996016406703860/" target="_blank" rel="noopener">Wishlist on Meta Quest</a>
+        <a class="btn btn--ghost" href="https://discord.gg/vJ4qatTG2x" target="_blank" rel="noopener">Join the Discord</a>
+      </div>
+
+      <div class="ratings">
+        <img src="images/PEGI_12.webp" alt="PEGI 12 age rating" width="250" height="305" loading="lazy" decoding="async">
+        <img src="images/TeenRating.webp" alt="ESRB Teen age rating" width="500" height="698" loading="lazy" decoding="async">
+        <span>Rated for ages 12+<br>Horror · Users interact · In-game purchases</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="images/FlunklugLogoShadow.webp" alt="Flunklug" width="2560" height="1080" loading="lazy" decoding="async">
+        <p>A multiplayer co-op VR horror game about stealing what isn't yours. Made in England by Screen VR Studios.</p>
+      </div>
+
+      <div>
+        <h3>Game</h3>
+        <ul>
+          <li><a href="index.html#game">The Game</a></li>
+          <li><a href="index.html#loop">The Loop</a></li>
+          <li><a href="index.html#monsters">Monsters</a></li>
+          <li><a href="about.html">About &amp; FAQ</a></li>
+          <li><a href="media.html">Media &amp; Press</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Community</h3>
+        <ul>
+          <li><a href="https://www.meta.com/experiences/flunklug/996016406703860/" target="_blank" rel="noopener">Wishlist on Meta Quest</a></li>
+          <li><a href="https://discord.gg/vJ4qatTG2x" target="_blank" rel="noopener">Discord</a></li>
+          <li><a href="https://www.tiktok.com/@flunklug" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Studio</h3>
+        <ul>
+          <li><a href="https://screenvrstudios.com/" target="_blank" rel="noopener">Screen VR Studios</a></li>
+          <li><a href="https://www.meta.com/en-gb/experiences/fear-massive/7140885302658491/" target="_blank" rel="noopener">Fear Massive</a></li>
+          <li><a href="https://www.meta.com/en-gb/experiences/marmo/24881288181514277/" target="_blank" rel="noopener">Marmo</a></li>
+          <li><a href="https://www.youtube.com/@ScreenVR" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="mailto:screenvrstudios@gmail.com">Press &amp; contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <p>&copy; 2026 Flunklug. Screen VR Studios Ltd. All rights reserved.</p>
+      <p><a href="https://screenvrstudios.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+  <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+  <img src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+</body>
 </html>
